@@ -62,13 +62,14 @@ def plot_results_hierarchical(homogeneity, completeness, vmeasure, alg):
     plt.plot(n_clusters, compl, label="completeness", linestyle="solid", marker="s", c=cmap[1], markersize=6)
     plt.plot(n_clusters, vm, label="vmeasure", linestyle="dotted", marker="o", c=cmap[2])
     plt.xlabel("#cluster", fontsize=14)
-    plt.xticks(range(0, 260, 50), [str(i) if i % 50 == 0 else "" for i in range(0, 260, 50)])
-    plt.yticks([0, 0.2, 0.4, 0.6, .8, 1.0])
+    plt.xticks(range(0, 260, 50), [str(i) if i % 50 == 0 else "" for i in range(0, 260, 50)], fontsize=14)
+    plt.yticks([0, 0.2, 0.4, 0.6, .8, 1.0], fontsize=14)
     legend = plt.legend(fontsize=14, loc='lower right')
     frame = legend.get_frame()
     frame.set_facecolor('w')
     plt.ylim((-0.05, 1.05))
     plt.savefig(f"results_clustering\\{alg}.png")
+    plt.savefig(f"results_clustering\\{alg}.pdf")
     plt.show()
 
 
@@ -106,13 +107,14 @@ def plot_results_kmeans(homogeneity, completeness, vmeasure, alg):
     plt.plot(n_clusters, compl, label="completeness", linestyle="solid", marker="s", c=cmap[1], markersize=6)
     plt.plot(n_clusters, vm, label="vmeasure", linestyle="dotted", marker="o", c=cmap[2])
     plt.xlabel("#cluster", fontsize=14)
-    plt.xticks(range(10, 210, 50), [str(i) if i % 50 == 0 else "" for i in range(10, 210, 50)])
-    plt.yticks([0, 0.2, 0.4, 0.6, .8, 1.0])
+    plt.xticks(range(0, 210, 50), [str(i) if i % 50 == 0 else "" for i in range(0, 210, 50)], fontsize=14)
+    plt.yticks([0, 0.2, 0.4, 0.6, .8, 1.0], fontsize=14)
     legend = plt.legend(fontsize=14, loc='lower right')
     frame = legend.get_frame()
     frame.set_facecolor('w')
     plt.ylim((-0.05, 1.05))
     plt.savefig(f"results_clustering\\{alg}.png")
+    plt.savefig(f"results_clustering\\{alg}.pdf")
     plt.show()
 
 
@@ -148,17 +150,19 @@ def plot_results_dbscan(homogeneity, completeness, vmeasure, alg):
     plt.plot(n_clusters, compl, label="completeness", linestyle="solid", marker="s", c=cmap[1], markersize=6)
     plt.plot(n_clusters, vm, label="vmeasure", linestyle="dotted", marker="o", c=cmap[2])
     plt.xlabel("#cluster", fontsize=14)
-    #plt.xticks(range(0, 210, 50), [str(i) if i % 50 == 0 else "" for i in range(0, 210, 50)])
-    plt.yticks([0, 0.2, 0.4, 0.6, .8, 1.0])
+    #plt.xticks(range(0, 210, 50), [str(i) if i % 50 == 0 else "" for i in range(0, 210, 50)], fontsize=14)
+    plt.xticks(fontsize=14)
+    plt.yticks([0, 0.2, 0.4, 0.6, .8, 1.0], fontsize=14)
     legend = plt.legend(fontsize=14, loc='lower right')
     frame = legend.get_frame()
     frame.set_facecolor('w')
     plt.ylim((-0.05, 1.05))
     plt.savefig(f"results_clustering\\{alg}.png")
+    plt.savefig(f"results_clustering\\{alg}.pdf")
     plt.show()
 
 
-def test_partial_order(sdist_jaccard, sdist_euclidean):
+def check_partial_order(sdist_jaccard, sdist_euclidean):
     indices_jaccard = []
     for i in range(len(sdist_jaccard)):
         for j in range(len(sdist_jaccard)):
@@ -216,7 +220,8 @@ if __name__ == "__main__":
     end_time = time.time()
     logging.info("loading the deck data sets: {} s".format(end_time - start_time))
 
-
+    # uncomment this to recalculate clustering results
+    """
     # calculate distance matrices
     start_time = time.time()
     dist_jaccard = calculate_distance_matrix(playedDecks, measure="jaccard")
@@ -350,6 +355,7 @@ if __name__ == "__main__":
     end_time = time.time()
     logging.info(f"calculation of K-Means: {end_time - start_time} s")
 
+    """
 
     import pickle
     homogeneity, completeness, vmeasure, labels = load()

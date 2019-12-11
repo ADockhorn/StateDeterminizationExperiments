@@ -1,7 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af2d9268-f5fe-4dad-8e85-3191ba5d78b2" name="Default Changelist" comment="" />
+    <list default="true" id="af2d9268-f5fe-4dad-8e85-3191ba5d78b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_based_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_test_clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clustering_algorithms/dbscan.py" beforeDir="false" afterPath="$PROJECT_DIR$/clustering_algorithms/dbscan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clustering_algorithms/hierarchical_clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/clustering_algorithms/hierarchical_clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dissertation_plots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_cluster_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_cluster_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_test_bigrams.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_test_bigrams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_test_clusters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/complete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/completeness_euclidean.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/completeness_euclidean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/completeness_jaccard.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/completeness_jaccard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/dbscan-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/dbscan-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/dbscan-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/dbscan-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/dbscan-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/dbscan-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/homogeneity_euclidean.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/homogeneity_euclidean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/homogeneity_jaccard.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/homogeneity_jaccard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/kmeans.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/kmeans.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/single.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/single.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/v-measure_euclidean.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/v-measure_euclidean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_clustering/v-measure_jaccard.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_clustering/v-measure_jaccard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/average_results.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/average_results.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/average_results.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/average_results.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/filtered_average_results.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/filtered_average_results.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/filtered_average_results.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/filtered_average_results.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_4.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_5.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_6.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_7.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_7.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_8.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_8.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_opponent_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_opponent_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_per_deck_all_vs_all.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_per_deck_all_vs_all.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_per_deck_all_vs_all.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_per_deck_all_vs_all.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_per_deck_proposed_vs_all.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_per_deck_proposed_vs_all.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/result_per_deck_proposed_vs_all.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/result_per_deck_proposed_vs_all.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_game_playing/results_game_play.py" beforeDir="false" afterPath="$PROJECT_DIR$/results_game_playing/results_game_play.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_complete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_dbscan-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_dbscan-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_dbscan-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_dbscan-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_dbscan-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_dbscan-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_kmeans.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_kmeans.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_single.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_game_single.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_complete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_dbscan-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_dbscan-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_dbscan-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_dbscan-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_dbscan-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_dbscan-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_kmeans.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_kmeans.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_single.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/aggregated_prediction_turn_single.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_complete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_dbscan-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_dbscan-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_dbscan-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_dbscan-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_dbscan-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_dbscan-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_kmeans.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_kmeans.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_single.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_game_single.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_complete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_dbscan-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_dbscan-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_dbscan-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_dbscan-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_dbscan-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_dbscan-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_kmeans.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_kmeans.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_single.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019/per_rank_prediction_turn_single.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_combined.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_combined.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_game.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_game_sequence.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_game_sequence.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_isolated.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_isolated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_succeeding.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_game_succeeding.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_combined.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_combined.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_game.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_game_sequence.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_game_sequence.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_isolated.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_isolated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_succeeding.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/aggregated_prediction_turn_succeeding.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_combined.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_combined.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_game.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_game_sequence.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_game_sequence.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_isolated.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_isolated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_succeeding.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_game_succeeding.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_combined.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_combined.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_game.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_game_sequence.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_game_sequence.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_isolated.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_isolated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_succeeding.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_year_2019_bigrams/per_rank_prediction_turn_succeeding.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py.ipynb" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,26 +121,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Rsn3oPhkGAb3pqAqmEa1sf4UAc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/results_game_playing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ForwardModelLearningDissertation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction" />
+      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\clustering_algorithms" />
+      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\results_current_patch" />
+      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\replay_data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\results_game_playing" />
       <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\clustering_algorithms" />
       <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction" />
       <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\deck_data" />
-      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\replay_data" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction" />
-      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\clustering_algorithms" />
-      <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\results_current_patch" />
       <recent name="C:\Users\dockhorn\PycharmProjects\BigramExtraction\replay_data" />
     </key>
   </component>
@@ -65,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.results_game_play">
+  <component name="RunManager" selected="Python.dbscan">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="StateDeterminizationExperiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,7 +196,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cluster_based_prediction.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\dockhorn\PycharmProjects\BigramExtraction\prediction_test_clustering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -110,7 +205,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cluster_based_prediction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dbscan" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="StateDeterminizationExperiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,7 +218,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\dockhorn\PycharmProjects\BigramExtraction\cluster_based_prediction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clustering_algorithms/dbscan.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +227,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prediction_test_bigrams" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dissertation_plots" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="StateDeterminizationExperiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,7 +240,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prediction_test_bigrams.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dissertation_plots.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +249,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prediction_test_clusters" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hierarchical_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="StateDeterminizationExperiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -162,12 +257,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clustering_algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prediction_test_clusters.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clustering_algorithms/hierarchical_clustering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,19 +294,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.prediction_test_clusters" />
-      <item itemvalue="Python.cluster_based_prediction" />
       <item itemvalue="Python.cluster_based_prediction (1)" />
-      <item itemvalue="Python.prediction_test_bigrams" />
       <item itemvalue="Python.results_game_play" />
+      <item itemvalue="Python.dissertation_plots" />
+      <item itemvalue="Python.hierarchical_clustering" />
+      <item itemvalue="Python.dbscan" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dbscan" />
+        <item itemvalue="Python.hierarchical_clustering" />
+        <item itemvalue="Python.dissertation_plots" />
         <item itemvalue="Python.results_game_play" />
         <item itemvalue="Python.cluster_based_prediction (1)" />
-        <item itemvalue="Python.prediction_test_bigrams" />
-        <item itemvalue="Python.cluster_based_prediction" />
-        <item itemvalue="Python.prediction_test_clusters" />
       </list>
     </recent_temporary>
   </component>
@@ -238,19 +333,44 @@
       <workItem from="1571207814854" duration="140000" />
       <workItem from="1571208144537" duration="16077000" />
       <workItem from="1571933026991" duration="54000" />
+      <workItem from="1573249387936" duration="759000" />
+      <workItem from="1573498276634" duration="22000" />
+      <workItem from="1574518577802" duration="145000" />
+      <workItem from="1574931497471" duration="29000" />
+      <workItem from="1574934815457" duration="214000" />
+      <workItem from="1575291160521" duration="2402000" />
+      <workItem from="1575325557460" duration="14000" />
+      <workItem from="1575404065910" duration="366000" />
+      <workItem from="1575814435422" duration="5634000" />
+      <workItem from="1575835565819" duration="948000" />
+      <workItem from="1575885647302" duration="3534000" />
+      <workItem from="1576099343002" duration="90000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/prediction_test_clusters.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/prediction_test_bigrams.py</url>
+          <line>267</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -264,15 +384,18 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$cluster_based_prediction__1_.coverage" NAME="cluster_based_prediction (1) Coverage Results" MODIFIED="1571061033096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$dissertation_plots.coverage" NAME="dissertation_plots Coverage Results" MODIFIED="1575885686655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$hierarchical_clustering.coverage" NAME="hierarchical_clustering Coverage Results" MODIFIED="1570695722112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clustering_algorithms" />
-    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1570704378897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clustering_algorithms" />
     <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$cluster_based_prediction.coverage" NAME="cluster_based_prediction Coverage Results" MODIFIED="1571060892170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clustering_algorithms" />
     <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$dbscan.coverage" NAME="dbscan Coverage Results" MODIFIED="1570800530505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clustering_algorithms" />
+    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$plot_cluster_analysis.coverage" NAME="plot_cluster_analysis Coverage Results" MODIFIED="1570737114786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$results_game_play.coverage" NAME="results_game_play Coverage Results" MODIFIED="1571208771324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/results_game_playing" />
+    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$prediction_test_bigrams.coverage" NAME="prediction_test_bigrams Coverage Results" MODIFIED="1575291216650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1570704378897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clustering_algorithms" />
+    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$pytest_in_plot_cluster_analysis_py.coverage" NAME="pytest in plot_cluster_analysis.py Coverage Results" MODIFIED="1575814942403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BigramExtraction$bigram_extraction.coverage" NAME="bigram_extraction Coverage Results" MODIFIED="1570525272492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$minPtsGraphDBScan.coverage" NAME="minPtsGraphDBScan Coverage Results" MODIFIED="1570735525055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clustering_algorithms" />
-    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$plot_cluster_analysis.coverage" NAME="plot_cluster_analysis Coverage Results" MODIFIED="1570737114786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$prediction_test_clusters.coverage" NAME="prediction_test_clusters Coverage Results" MODIFIED="1571060324209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/StateDeterminizationExperiments$results_game_play.coverage" NAME="results_game_play Coverage Results" MODIFIED="1571208771324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/results_game_playing" />
     <SUITE FILE_PATH="coverage/BigramExtraction$prediction_test.coverage" NAME="prediction_test Coverage Results" MODIFIED="1570623220540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

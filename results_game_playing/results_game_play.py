@@ -82,7 +82,7 @@ def heatmap(data, row_labels=None, col_labels=None, ax=None, cbar=True,
 
 def annotate_heatmap(im, data=None, valfmt="{x:.2f}",
                      textcolors=["black", "white"],
-                     threshold=None, ignore_diagonal=False, **textkw):
+                     threshold=None, ignore_diagonal=False, fontsize=12, **textkw):
     """
     A function to annotate a heatmap.
 
@@ -135,9 +135,9 @@ def annotate_heatmap(im, data=None, valfmt="{x:.2f}",
             if i == j and ignore_diagonal:
                 continue
             kw.update(color=textcolors[int(im.norm(data[i, j]) < threshold)])
-            text = im.axes.text(j, i, valfmt(data[i, j], None), fontsize=10, **kw)
+            text = im.axes.text(j, i, valfmt(data[i, j], None), fontsize=fontsize, **kw)
             texts.append(text)
-
+    print("fontsize", fontsize)
     return texts
 
 
@@ -190,16 +190,17 @@ if __name__ == "__main__":
     im, cbar = heatmap(np.array(average_win_rates).reshape(9, 1), None, None, ax=axes[1], vmin=0, vmax=1, cbar=False)
     im.axes.set_ylabel("average win-rate", fontsize=12)
 
-    texts = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.5)
+    texts = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51)
 
     im, _ = heatmap(win_rates, bot_names[:9], bot_names[0:9], ax=axes[0], vmin=0, vmax=1, cbar=False)
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.6, ignore_diagonal=True, fontproperties=prop)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51, ignore_diagonal=True, fontsize=12)
 
     plt.subplots_adjust(top=0.95, bottom=-0.25, left=0.20, right=0.92, hspace=0.0,
                         wspace=0.0)
 
     fig.tight_layout()
     plt.savefig("average_results.pdf")
+    plt.savefig("average_results.png")
     plt.show()
 
 
@@ -222,17 +223,18 @@ if __name__ == "__main__":
                        aspect="equal", cbar=False)
     im.axes.set_ylabel("average win-rate", fontsize=12)
 
-    texts = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.6)
+    texts = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51)
 
     im, _ = heatmap(filtered_win_rates, bot_names[:9], bot_names[0:9], ax=axes[0], vmin=0, vmax=1,
                        aspect="equal", cbar=False)
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.5, ignore_diagonal=True, fontproperties=prop)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51, ignore_diagonal=True, fontsize=12)
 
     plt.subplots_adjust(top=0.95, bottom=-0.25, left=0.20, right=0.95, hspace=0.0,
                         wspace=0.0)
 
     fig.tight_layout()
     plt.savefig("filtered_average_results.pdf")
+    plt.savefig("filtered_average_results.png")
     plt.show()
 
 
@@ -252,7 +254,7 @@ if __name__ == "__main__":
                            aspect="equal", cbar=False)
         im.axes.set_ylabel("average win-rate playing a deck", fontsize=12)
 
-        _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.6)
+        _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51)
 
         im, _ = heatmap(np.array(win_rate_against_deck).reshape(1, 6), None, None, ax=axes[1, 0], vmin=0, vmax=1,
                            aspect="equal", cbar=False)
@@ -265,7 +267,7 @@ if __name__ == "__main__":
 
         im, _ = heatmap(result, deck_names, deck_names, ax=axes[0, 0], vmin=0, vmax=1,
                         aspect="equal", cbar=False)
-        _ = annotate_heatmap(im, valfmt="{x:.1f}", threshold=0.5, ignore_diagonal=False, fontproperties=prop)
+        _ = annotate_heatmap(im, valfmt="{x:.1f}", threshold=0.51, ignore_diagonal=False, fontsize=14)
 
         axes[1, 1].axis("off")
 
@@ -274,6 +276,7 @@ if __name__ == "__main__":
         plt.axis('off')
         fig.tight_layout()
         plt.savefig(f"result_opponent_{i}.pdf")
+        plt.savefig(f"result_opponent_{i}.png")
 
         plt.show()
 
@@ -293,7 +296,7 @@ if __name__ == "__main__":
                        aspect="equal", cbar=False)
     im.axes.set_ylabel("average win-rate playing a deck", fontsize=12)
 
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.6)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51)
 
     im, _ = heatmap(np.array(win_rate_against_deck).reshape(1, 6), None, None, ax=axes[1, 0], vmin=0, vmax=1,
                        aspect="equal", cbar=False)
@@ -302,11 +305,11 @@ if __name__ == "__main__":
     #pos = im.axes._position
     #im.axes.set_position([pos.x0, pos.x1, pos.width, pos.height])
 
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.6)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51)
 
     im, _ = heatmap(result, deck_names, deck_names, ax=axes[0, 0], vmin=0, vmax=1,
                     aspect="equal", cbar=False)
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.5, ignore_diagonal=False, fontproperties=prop)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51, ignore_diagonal=False, fontsize=12)
 
     axes[1, 1].axis("off")
 
@@ -315,6 +318,7 @@ if __name__ == "__main__":
     plt.axis('off')
     fig.tight_layout()
     plt.savefig(f"result_per_deck_proposed_vs_all.pdf")
+    plt.savefig(f"result_per_deck_proposed_vs_all.png")
     plt.show()
 
 
@@ -341,18 +345,18 @@ if __name__ == "__main__":
                        aspect="equal", cbar=False)
     im.axes.set_ylabel("average win-rate playing a deck", fontsize=12)
 
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.5)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51)
 
     im, _ = heatmap(np.array(win_rate_against_deck).reshape(1, 6), None, None, ax=axes[1, 0], vmin=0, vmax=1,
                        aspect="equal", cbar=False)
     im.axes.set_xlabel("average win-rate playing against a deck", fontsize=12)
     im.axes.xaxis.set_label_position("top")
 
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.5)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51)
 
     im, _ = heatmap(result, deck_names, deck_names, ax=axes[0, 0], vmin=0, vmax=1,
                     aspect="equal", cbar=False)
-    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.5, ignore_diagonal=False, fontproperties=prop)
+    _ = annotate_heatmap(im, valfmt="{x:.2f}", threshold=0.51, ignore_diagonal=False, fontsize=12)
 
     axes[1, 1].axis("off")
 
@@ -361,4 +365,5 @@ if __name__ == "__main__":
     plt.axis('off')
     fig.tight_layout()
     plt.savefig(f"result_per_deck_all_vs_all.pdf")
+    plt.savefig(f"result_per_deck_all_vs_all.png")
     plt.show()

@@ -28,6 +28,43 @@ if __name__ == "__main__":
     dist_euclidean = calculate_distance_matrix(playedDecks, measure="euclidean")
     sdist_euclidean = squareform(dist_euclidean)
 
+    # plot distance matrix
+    import matplotlib.pyplot as plt
+    fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(5, 3.5))
+    plt.imshow(sdist_jaccard)
+    cbar = plt.colorbar()
+    cbar.ax.tick_params(labelsize=12)
+    plt.tick_params(
+        axis='both',  # changes apply to the x-axis
+        which='both',  # both major and minor ticks are affected
+        bottom=False,  # ticks along the bottom edge are off
+        top=False,  # ticks along the top edge are off
+        left=False,  # ticks along the top edge are off
+        right=False,  # ticks along the top edge are off
+        labelbottom=False, # labels along the bottom edge are off
+        labelleft=False)  # labels along the bottom edge are off
+    plt.savefig("deck_data/distance_matrix_jaccard.png")
+    plt.savefig("deck_data/distance_matrix_jaccard.pdf")
+    plt.show()
+
+    fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(5, 3.5))
+    plt.imshow(sdist_euclidean)
+    cbar = plt.colorbar()
+    cbar.ax.tick_params(labelsize=12)
+    plt.tick_params(
+        axis='both',  # changes apply to the x-axis
+        which='both',  # both major and minor ticks are affected
+        bottom=False,  # ticks along the bottom edge are off
+        top=False,  # ticks along the top edge are off
+        left=False,  # ticks along the top edge are off
+        right=False,  # ticks along the top edge are off
+        labelbottom=False, # labels along the bottom edge are off
+        labelleft=False)  # labels along the bottom edge are off
+    plt.savefig("deck_data/distance_matrix_euclidean.png")
+    plt.savefig("deck_data/distance_matrix_euclidean.pdf")
+    plt.show()
+
+
     # apply hierarchical cluster
     for linkage in {"single", "complete"}:
         for i in range(2, 40):

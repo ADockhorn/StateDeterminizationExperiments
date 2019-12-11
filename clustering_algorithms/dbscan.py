@@ -54,10 +54,15 @@ if __name__ == "__main__":
                 horizontalalignment='right',
                 fontweight='light',
             )
+            cbar = plt.gca().collections[-1].colorbar
+            cbar.ax.tick_params(labelsize=14)
 
             plt.xlabel("$m_{Pts}$", fontsize=14)
-            plt.ylabel("$\\varepsilon$-Neighborhood", fontsize=14)
+            plt.xlabel("$m_{Pts}$", fontsize=14)
+            plt.ylabel("$\\varepsilon$-Neighborhood", fontsize=12)
             plt.ylim((0, 20))
-            plt.yticks(plt.yticks()[0], ["{:0.2f}".format(val) for val in eps_values][::-1])
-            plt.savefig(f"results_clustering\\{title}_{distance.lower()}")
+            plt.yticks(plt.yticks()[0], ["{:0.2f}".format(val) for val in eps_values][::-1], fontsize=12)
+            plt.xticks(plt.xticks()[0][::2], plt.xticks()[1][::2], fontsize=14)
+            plt.savefig(f"results_clustering\\{title}_{distance.lower()}.png")
+            plt.savefig(f"results_clustering\\{title}_{distance.lower()}.pdf")
             plt.show()

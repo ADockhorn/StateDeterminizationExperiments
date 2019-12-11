@@ -160,11 +160,11 @@ def plot_statistics_per_top_k(statistics, bigram_name, k, result_folder, filenam
              marker="v", markeredgecolor='none', color="r", linestyle='', markersize=7)
 
     plt.xlabel("Turn", fontsize=14)
-    plt.xticks(np.arange(10), [str(i) for i in range(1, 11)])
+    plt.xticks(np.arange(10), [str(i) for i in range(1, 11)], fontsize=14)
 
     plt.ylabel("Prediction Accuracy", fontsize=14)
     plt.ylim((0, 1))
-    plt.yticks(np.arange(0, 1.01, 0.25), ["{:0.2f}".format(i) for i in np.arange(0, 1.01, 0.25)])
+    plt.yticks(np.arange(0, 1.01, 0.25), ["{:0.2f}".format(i) for i in np.arange(0, 1.01, 0.25)], fontsize=14)
 
     handles, labels = plt.gca().get_legend_handles_labels()
     order = [1, 0, 2]
@@ -174,6 +174,7 @@ def plot_statistics_per_top_k(statistics, bigram_name, k, result_folder, filenam
 
     if filename:
         plt.savefig(f'{result_folder}/{filename}.png')
+        plt.savefig(f'{result_folder}/{filename}.pdf')
     plt.show()
 
 
@@ -200,11 +201,11 @@ def plot_statistics_any_top_k(statistics_any, baseline, k_values_to_plot, result
              marker="^", markeredgecolor='none', color=cmap[0], markersize=7, linestyle="solid", linewidth=2)
 
     plt.xlabel("Turn", fontsize=14)
-    plt.xticks(np.arange(10), [str(i) for i in range(1, 11)])
+    plt.xticks(np.arange(10), [str(i) for i in range(1, 11)], fontsize=14)
 
     plt.ylabel("Prediction Accuracy", fontsize=14)
     plt.ylim((0, 1))
-    plt.yticks(np.arange(0, 1.01, 0.25), ["{:0.2f}".format(i) for i in np.arange(0, 1.01, 0.25)])
+    plt.yticks(np.arange(0, 1.01, 0.25), ["{:0.2f}".format(i) for i in np.arange(0, 1.01, 0.25)], fontsize=14)
 
     legend = plt.legend(fontsize=14, loc=legendloc, ncol=legendcol)
     frame = legend.get_frame()
@@ -213,6 +214,7 @@ def plot_statistics_any_top_k(statistics_any, baseline, k_values_to_plot, result
     # plt.title(title, fontsize=16, pad=5)
     if filename:
         plt.savefig(f'{result_folder}/{filename}.png')
+        plt.savefig(f'{result_folder}/{filename}.pdf')
     plt.show()
 
 
@@ -384,8 +386,8 @@ if __name__ == "__main__":
 
     # endregion
 
-    with open(f"{result_folder}\\bigram_based_predictors.txt", "wb") as file:
-        pickle.dump(bigram_data_sets, file)
+    #with open(f"{result_folder}\\bigram_based_predictors.txt", "wb") as file:
+    #    pickle.dump(bigram_data_sets, file)
 
     for alg in bigram_data_sets:
         plot_statistics_per_top_k(bigram_data_sets[alg]["statistics"], alg, k,
@@ -408,3 +410,14 @@ if __name__ == "__main__":
                                   bigram_data_sets[alg]["statistics_next_turn"], k_values_to_plot,
                                   result_folder=result_folder, legendloc="upper left", legendcol=2,
                                   filename=f"aggregated_prediction_turn_{alg}")
+    """
+    for bigram_name in bigram_data_sets:
+        statistics = bigram_data_sets[bigram_name]["statistics"]
+        print(bigram_name, round(
+            np.mean(np.mean(np.array([statistics[:, 0, 0] / (statistics[:, 0, 0] + statistics[:, 0, 1])]), axis=0)), 3))
+
+    for bigram_name in bigram_data_sets:
+        statistics = bigram_data_sets[bigram_name]["statistics_next_turn"]
+        print(bigram_name, round(
+            np.mean(np.mean(np.array([statistics[:, 0, 0] / (statistics[:, 0, 0] + statistics[:, 0, 1])]), axis=0)), 3))
+    """
