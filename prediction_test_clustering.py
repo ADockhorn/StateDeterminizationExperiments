@@ -361,3 +361,18 @@ if __name__ == "__main__":
                     result_folder=result_folder,
                     filename=f"turn_stats_comparison")
 
+    for bigram_name in cluster_based_predictors:
+        statistics = cluster_based_predictors[bigram_name]["statistics"]
+        print(bigram_name, round(
+            np.mean(np.mean(np.array([statistics[:, 0, 0] / (statistics[:, 0, 0] + statistics[:, 0, 1])]), axis=0)), 3))
+
+    for bigram_name in cluster_based_predictors:
+        statistics = cluster_based_predictors[bigram_name]["statistics_next_turn"]
+        print(bigram_name, round(
+            np.mean(np.mean(np.array([statistics[:, 0, 0] / (statistics[:, 0, 0] + statistics[:, 0, 1])]), axis=0)), 3))
+
+    for bigram_name in cluster_based_predictors:
+        print(bigram_name, round(np.mean(cluster_based_predictors[bigram_name]["statistics_any_game"][:, 0]), 3))
+
+    for bigram_name in cluster_based_predictors:
+        print(bigram_name, round(np.mean(cluster_based_predictors[bigram_name]["statistics_any_next_turn"][:, 0]), 3))
